@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+	}
+.divide{
+	border: 1px solid green;
+	padding: 0px 2px 25px 0;
+	margin: 1px;
+}
+
+body{
+background-color:hsl(0.0, 0.0%, 82.7%) ;
+}	
+
+#coloring{
+background-color: hsl(0.0, 0.0%, 90.7%);
+border: 2px solid black ;
+
+}
+#coloring{
+	height: 100vh;
+	width: 40vh;
+	float: left;
+	display: grid;
+	grid-template-rows: repeat(4,1fr) ;
+	grid-template-columns: repeat(3,1fr);
+	gap: 5px;
+}
+
+#blank{
+	display: grid;
+	grid-template-columns: repeat(60, 1fr);
+    
+	height: 100%;
+
+	
+
+}
+
+#blank{
+	border: 1px gray solid;
+    background-color: white;
+
+}
+#lebutton{
+	background-color: white;
+	border: 1px solid black;
+	margin-left: 60px;
+	padding: 30px;
+	width: 150px;
+}
