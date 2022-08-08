@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.class{
+			border: 5px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div draggable="true" id="box">
+		<div class="one">A</div>
+		<div class="one">B</div>
+		<div class="one">C</div>
+		<div class="one">D</div>
+		<div class="one">E</div>
+		<div class="one">F</div>
+		<div class="one">G</div>
+		<div class="one">H</div>
+		<div class="one">I</div>
+		<div class="one">J</div>
+		<div class="one">K</div>
+		<div class="one">L</div>
+		<div class="one">M</div>
+		<div class="one">N</div>
+		<div class="one">O</div>
+		<div class="one">P</div>
+		<div class="one">Q</div>
+		<div class="one">U</div>
+		<div class="one">R</div>
+		<div class="one">S</div>
+		<div class="one">T</div>
+		<div class="one">W</div>
+		<div class="one">X</div>
+		<div class="one">Y</div>
+		<div class="one">Z</div>
+		
+	</div>
+	<script type="text/javascript">
+		
+		let alpha=document.getElementsByClassName("one")
+		alpha.addEventListener("dragstart",function(event)){
+			event.traget.style.backgroundColor="gray"
+
+		}
+		alpha.addEventListener("dragend",function(event)){
+           event.target.style.position = "absolute";
+
+		}
+
+
+
+
+   
+
+   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        #target {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          background: yellow;
+        }
+        #box {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="target"></div>
+        <br>
+        <div id="box" draggable="true"></div>
+
+   <script type="text/javascript">
+       
+      let bedrag=document.getElementById("box")
+      bedrag.addEventListener("dragstart",ondragstart)
+      function ondragstart(event){
+        event.dataTransfer.setData("text/javascript",event.target.id)
+        e.preventDefault()
+
+
+      }
+
+    let dragger=document.getElementById("target")
+    dragger.addEventListener("ondrop",ondrop)
+    function ondrop(event){
+        event.dataTransfer.getData("text/javascript",event.target.id)
+        e.preventDefault()
+    }
+    dragger.appendChild(bedrag)
+
+
+   </script>
+
+
+    </body>
+    </html>

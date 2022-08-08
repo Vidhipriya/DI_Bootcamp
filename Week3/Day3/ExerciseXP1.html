@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p {
+          background: yellow;
+          color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <button id="clear">Clear Interval</button>
+    </body>
+
+
+    <script type="text/javascript">
+    	
+    		 function timer (e){
+ 	 	let x= document.getElementById("container") 	 	
+ 	 	alert("Hello World")
+
+ 	 }
+ 	 setTimeout(timer, 2000) 
+ 	 function para (e){
+ 	 	let x= document.createElement("p")
+ 	 	x.innerHTML="Hello World"
+ 	 	let y =document.getElementById("container")
+        y.appendChild(x)
+ 	 }
+ 	 setTimeout(para, 2000)
+
+ 	let time=setInterval(timy, 2000)
+ 	function timy(e){
+       let addPara=document.getElementById("container")
+    
+       let createp=document.createElement("p")
+       addPara.innerHTML=  "Hello World"
+       addPara.appendChild(createp)
+       let clicker= document.getElementById("clear")
+       clicker.addEventListener("click",RespondClick)
+      	    function RespondClick(e){
+       		e.target.style.backgroundColor="red"}
+       		{
+       		clearInterval(time)
+         }
+
+ 	}
+
+
+
+    </script>
+    </html>

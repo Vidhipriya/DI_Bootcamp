@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div>Users:</div>
+<ul>
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+ <script type="text/javascript">
+ let div=document.querySelector("div")
+ let john=document.querySelectorAll("ul li")[0]
+ div.setAttribute('style', "background-color:lightblue;")
+ john.remove()
+ // style=display-none
+ let pete=document.querySelectorAll("ul li")[0]
+ pete.setAttribute('style', "border:4px solid black;")
+
+document.body.setAttribute('style', "font-size:50px;")
+
+if (div.getAttribute('style')== "background-color:lightblue;"){
+    alert("Hello x and y")
+  }
+ </script>
+
+</body>
+</html>

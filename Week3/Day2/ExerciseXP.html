@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+ <article>
+    <h1> Some Facts </h1>
+    <h2 id="background"> The Chocolate </h2>
+    <h3 id="bead"> History of the chocolate </h3>
+    <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+    Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+    <p> After the European discovery of the Americas, chocolate became 
+    very popular in the wider world, and its demand exploded. </p>
+    <p> Chocolate has since become a popular food product that millions enjoy every day, 
+    thanks to its unique, rich, and sweet taste.</p> 
+    <p> But what effect does eating chocolate have on our health?</p> 
+</article>
+<button id="allPara">Button</button>
+
+
+
+<script type="text/javascript">
+let x =document.querySelectorAll("article h1");
+console.log(x)
+let lastPara=document.querySelectorAll("article p")[3];
+lastPara.remove
+
+
+let header =document.getElementById("background");
+header.addEventListener("click",RespondClick);
+
+function RespondClick(e){
+ e.target.style.backgroundColor= "red";
+}
+
+let head=document.getElementById("bead")
+head.addEventListener("click",HrespondClick);
+ 
+ function HrespondClick(e){
+
+   e.target.style.display = 'none';
+ }
+
+let btn=document.getElementById("allPara");
+btn.addEventListener("click",YrespondClick)
+function YrespondClick(){
+   let doc=document.getElementsByTagName("p")
+   for (let x in doc){
+     doc.style.fontWeight = 'bold';
+
+   }
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
