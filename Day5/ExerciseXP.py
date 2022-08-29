@@ -48,7 +48,7 @@ class MenuItem():
         # results = cursor.fetchall()
         connection.commit()
         connection.close()
-       
+    @staticmethod 
     def all(self):
         MenuItem=[]
         return MenuItem

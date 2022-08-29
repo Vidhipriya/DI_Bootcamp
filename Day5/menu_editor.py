@@ -34,6 +34,7 @@ elif user=='d':
 elif user=='v':      
         def show_restaurant_menu():
            return MenuItem.all()
+        show_restaurant_menu()
 else:
     pass
         
